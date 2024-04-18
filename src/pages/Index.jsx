@@ -46,7 +46,7 @@ const Index = () => {
           {products.map((product) => (
             <Box key={product.id} bg="gray.700" color="white" borderRadius="lg" overflow="hidden" shadow="md">
               <Image src={product.image} alt={product.name} boxSize="100%" objectFit="cover" />
-              <Flex p={5} flexDirection="column" justifyContent="space-between" h="100%" minH="360px">
+              <Flex p={5} flexDirection="column" justifyContent="space-between" h="100%" minH="400px">
                 <VStack align="start" spacing={3}>
                   <Text fontSize="xl" fontWeight="bold">
                     {product.name}
