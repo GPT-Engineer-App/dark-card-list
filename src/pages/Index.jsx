@@ -1,6 +1,6 @@
 // Complete the Index page component here
 // Use chakra-ui for styling and layout
-import { Box, Flex, Text, Image, VStack, Heading, SimpleGrid, useColorModeValue, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, VStack, Heading, SimpleGrid, useColorModeValue, Button, Link } from "@chakra-ui/react";
 import { FaShoppingCart } from "react-icons/fa";
 
 const products = [
@@ -59,6 +59,9 @@ const Index = () => {
                 <Button leftIcon={<FaShoppingCart />} colorScheme="yellow" variant="solid" w="full" mt={4}>
                   Add to Cart
                 </Button>
+                <Link href="#" color="blue.400" mt={2} textAlign="center" w="full" display="block">
+                  Buy Now
+                </Link>
               </Flex>
             </Box>
           ))}
