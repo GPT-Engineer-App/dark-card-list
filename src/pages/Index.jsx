@@ -46,7 +46,7 @@ const Index = () => {
           {products.map((product) => (
             <Card key={product.id} bg="gray.700" color="white" borderRadius="lg" overflow="hidden" shadow="md">
               <Image src={product.image} alt={product.name} boxSize="100%" objectFit="cover" />
-              <VStack p={5} spacing={3} align="start" h="100%" minH="400px">
+              <VStack p={5} spacing={3} align="start" h="100%" minH="400px" justifyContent="space-between">
                 <Text fontSize="xl" fontWeight="bold">
                   {product.name}
                 </Text>
